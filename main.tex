@@ -1,0 +1,156 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Asbjørn Lauritsen CV}
+\author{Asbjørn Lauritsen}
+\date{October 2022}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+\section*{Start}
+
+\simpleheader{headercolour}{Asbjørn}{Lauritsen}{Robotics Engineer}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+d
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{PB.png}
+\end{center}
+
+\bg{cvgreen}{white}{Personal information} \\[0.5em]
+Asbjørn Lauritsen\\
+nationality: Danish\\ 
+birthday: Jan. 3. 2000\\
+phone number: 42338435\\
+Mail: asbjorn2625@gmail.com
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+Robotics ~•~ Computer vision ~•~ Embedded Design ~•~ Machine Learning
+~•~ Control systems
+
+\bigskip
+
+
+\bg{cvgreen}{white}{Technical Interests}\\[0.5em]
+
+\texttt{Python} ~/~ \texttt{C/C++} ~/~ \texttt{Rust} 
+
+\texttt{Linux} ~/~ \texttt{RTOS} ~/~ \texttt{FPGA}
+
+\texttt{OpenCV} ~/~ \texttt{mechatronics} ~/~ \texttt{Kinematics}
+
+\texttt{Control Algorithms} ~/~ \texttt{Matlab} ~/~ \texttt{Simulations}
+
+\bigskip
+
+\bg{cvgreen}{white}{Reference Letter}\\[0.5em]
+Here is a reference letter that i received from one of the professors from my university
+\href{https://github.com/Asbjorn2625/CurriculumVitae/blob/0bd6718514d50d98627237549f51297433608c1c/SupportLetterAsbj\%C3\%B8rn.pdf}{\color{blue}Link}
+
+\bg{cvgreen}{white}{Languages}\\[0.5em]
+\begin{tabular}{c|c|c}
+    \textbf{Danish} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+    \textbf{English} & C2 & \pictofraction{\faCircle}{cvgreen}{4}{black!30}{1}{\tiny} \\
+    \textbf{German} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{2}{\tiny} \\
+\end{tabular}
+\bigskip
+
+\bg{cvgreen}{white}{General Interests}\\[0.5em]
+In my free time, I often spend quality moments with friends, whether it's simply hanging out or engaging in online gaming sessions. Additionally, I devote a significant portion of my leisure hours to coding software that enhances the efficiency of my daily routines.
+\bigskip
+\vspace{4em}
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Short Resumé}
+I'm a robotics engineer with a strong background in control systems, driven by a passion for innovation and problem-solving. A proud graduate of Aalborg University, I'm committed to advancing robotics technology for a brighter future.
+
+In 2022, me and some fellows, made the trip to Billund to join a hackathon that focused on finding solutions for the future of transportation. Me and my group used the problem based thinking and our engineering skills to analyse the workings inside Billund airport and found a simple solution that could spare them alot of money, this solution went on to win the competition and become my bachelor thesis.
+
+\vspace{3em}
+
+\section*{Curriculum}
+\begin{tabular}{r|p{0.5\textwidth} c}
+    \cvevent{2023--2025}{Masters in Robotics}{AAU}{Aalborg}{}{AAU.png} \\
+    \cvevent{2020--2023}{On-call Substitute}{TeamVikaren}{MidJutland}{In my transition year between high school and university, I got to try out a lot of different jobs and see how different companies work.}{AAU.png} \\
+    \cvevent{2016--2019}{Dish-washer}{Bones Restaurants}{Aarhus}{As a dishwasher at Bones Restaurants.}{AAGym.jpg}
+\end{tabular}
+\vspace{3em}
+
+\section*{Work experience}
+\begin{tabular}{r|p{0.5\textwidth} c}
+    \cvevent{2020--Now}{Ambassador for Robotics}{AAU}{Aalborg}{As an Ambassador at Aalborg University, I shared my passion for robotics, representing the university and educating visitors about the robotics program.}{AAU.png} \\
+    \cvevent{2019--2020}{On-call Substitute}{TeamVikaren}{MidJutland}{In my transition year between high school and university, I got to try out a lot of different jobs and see how different companies work.}{TV.png} \\
+    \cvevent{2017--2018}{Dish-washer}{Bones Restaurants}{Aarhus}{As a dishwasher at Bones Restaurants.}{bones_logo.png}
+\end{tabular}
+
+\vspace{3em}
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Asbjørn Lauritsen \icon{\faEnvelopeO}{cvgreen}{} Sjællandsgade 40 \icon{\faMapMarker}{cvgreen}{} Aalborg \icon{\faPhone}{cvgreen}{} +45 42 33 84 35 \newline\icon{\faAt}{cvgreen}{} \protect\url{asbjorn2625@gmail.com} LinkedIn in/asbjørnlau/
+}
+\end{center}
+\end{minipage}
+\newpage
+\end{paracol}
+
+
+\end{document}
